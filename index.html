@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GreenScape Lawn Care</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"
+      async
+      defer
+    ></script>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="./images/logo.png" alt="GreenScape Lawn Care Logo" />
+      </div>
+      <nav>
+        <div class="menu-icon" id="menuToggle">&#9776;</div>
+        <ul id="navMenu">
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#locations">Service Location</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="hero">
+        <div class="hero-left">
+          <video autoplay muted loop id="myVideo">
+            <source src="./images/video.MOV" type="video/mp4" />
+          </video>
+          <div class="overlay"></div>
+          <div class="hero-text">
+            <h1>
+              Developing
+              <span class="highlight">relationships through integrity</span> for
+              better service for our clients
+            </h1>
+            <p>Your trusted partner in lawn care and landscaping</p>
+          </div>
+        </div>
+        <div class="hero-right">
+          <div class="top-images">
+            <img src="./images/closeup.jpeg" alt="Lawn Service 1" />
+            <img src="./images/truck.jpeg" alt="Lawn Service 2" />
+          </div>
+          <div style="height: 400px" class="bottom-image">
+            <img src="./images/full.jpeg" alt="Lawn Service 3" />
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="about"
+        style="border-top: 2px solid #eee; border-bottom: 2px solid #eee"
+      >
+        <div class="container">
+          <div class="about-content">
+            <div class="about-image">
+              <img
+                style="width: 90%; height: 400px"
+                src="./images/business.jpeg"
+                alt="About Our Lawn Business"
+              />
+            </div>
+            <div class="about-text">
+              <h2>Learn More About Us</h2>
+              <p class="align-left">
+                Cutting Edge is a well-qualified lawn and landscaping company
+                that has been in business here in Brevard County for 20 plus
+                years. Our focus has always been on providing our clients with
+                excellent customer service, reliability and of course attention
+                to detailed and quality work.
+              </p>
+              <p class="align-right">
+                Our crews are well trained and professional. Whether it is lawn
+                maintenance, landscaping or enhancements our team is
+                professional and efficient. We look forward to developing new
+                relationships and growing our company with the same integrity
+                that our clients have come to depend on over the years.  
+              </p>
+              <p class="align-left">
+                At Cutting Edge, we pride ourselves on staying at the forefront
+                of landscaping technology and sustainable practices. Our team
+                regularly undergoes training to learn about the latest industry
+                innovations, environmentally friendly techniques, and
+                region-specific plant care. This dedication to continuous
+                improvement allows us to offer our clients not just maintenance,
+                but also expert advice on how to enhance and preserve their
+                outdoor spaces for years to come. From water-efficient
+                irrigation systems to native plant selections that thrive in
+                Brevard County's climate, we're committed to creating beautiful,
+                sustainable landscapes that our clients and the environment can
+                enjoy.
+              </p>
+              <a href="#contact" class="cta-button">Get in Touch</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="services" style="border-top: 2px solid #eee">
+        <div class="container">
+          <div class="services-scroll">
+            <div class="services-container">
+              <div class="service-item">
+                <img
+                  src="https://images.pexels.com/photos/1463530/pexels-photo-1463530.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                  alt="Lawn Mowing"
+                />
+                <p>Professional Lawn Mowing</p>
+              </div>
+              <div class="service-item">
+                <img
+                  src="https://images.pexels.com/photos/6508783/pexels-photo-6508783.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                  alt="Landscaping"
+                />
+                <p>Custom Landscaping Design</p>
+              </div>
+              <div class="service-item">
+                <img
+                  src="https://images.pexels.com/photos/5778899/pexels-photo-5778899.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                  alt="Tree Trimming"
+                />
+                <p>Expert Tree Trimming</p>
+              </div>
+              <div class="service-item">
+                <img
+                  src="https://images.pexels.com/photos/4505443/pexels-photo-4505443.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                  alt="Fertilization"
+                />
+                <p>Lawn Fertilization</p>
+              </div>
+              <div class="service-item">
+                <img
+                  src="https://images.pexels.com/photos/257824/pexels-photo-257824.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                  alt="Weed Control"
+                />
+                <p>Weed Control Services</p>
+              </div>
+              <div class="service-item">
+                <img
+                  src="https://images.pexels.com/photos/2157951/pexels-photo-2157951.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                  alt="Irrigation"
+                />
+                <p>Irrigation System Installation</p>
+              </div>
+              <div class="service-item">
+                <img
+                  src="https://images.pexels.com/photos/6968518/pexels-photo-6968518.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                  alt="Hardscaping"
+                />
+                <p>Hardscaping Solutions</p>
+              </div>
+              <div class="service-item">
+                <img
+                  src="https://images.pexels.com/photos/5693021/pexels-photo-5693021.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                  alt="Leaf Removal"
+                />
+                <p>Seasonal Leaf Removal</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="locations" class="full-screen-vertical">
+        <div class="container">
+          <div style="text-align: center; margin-bottom: 20px">
+            <h2>Serving Locations in Brevard County</h2>
+            <p style="color: rgb(63, 63, 63)">
+              From beachside to mainland, we bring expert lawn care and
+              landscaping to your doorstep
+            </p>
+          </div>
+
+          <div class="map-container">
+            <div class="rotating-words">
+              <span class="word">Merritt Island</span>
+              <span class="word">Cocoa Beach</span>
+              <span class="word">Titusville</span>
+              <span class="word">Melbourne</span>
+              <span class="word">Rockledge</span>
+            </div>
+            <iframe
+              width="100%"
+              height="400"
+              frameborder="0"
+              scrolling="no"
+              marginheight="0"
+              marginwidth="0"
+              id="gmap_canvas"
+              src="https://maps.google.com/maps?width=100%&amp;height=400&amp;hl=en&amp;q=%20Brevard%20County+(Melbourne)&amp;t=&amp;z=9&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+            ></iframe>
+            <div class="rotating-words bottom">
+              <span class="word">Palm Bay</span>
+              <span class="word">Viera</span>
+              <span class="word">Satellite Beach</span>
+              <span class="word">Cape Canaveral</span>
+              <span class="word">Indialantic</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" style="padding-top: 100px; padding-bottom: 100px">
+        <div class="container">
+          <div class="contact-wrapper">
+            <div class="contact-left">
+              <div class="contact-info">
+                <h2>Contact Information</h2>
+                <p>Say something to start a live chat</p>
+              </div>
+              <div class="contact-details">
+                <div class="contact-item">
+                  <i class="fas fa-phone-alt"></i>
+                  <p>+1 234 567 890</p>
+                </div>
+                <div class="contact-item">
+                  <i class="fas fa-envelope"></i>
+                  <p>contact@greenscape.com</p>
+                </div>
+                <div class="contact-item">
+                  <i class="fas fa-map-marker-alt"></i>
+                  <p>123 Lawn Street, Green City, 12345</p>
+                </div>
+              </div>
+              <div class="social-links">
+                <a href="#" class="social-icon"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+                <a href="#" class="social-icon"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+                <a href="#" class="social-icon"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+              </div>
+              <div class="circles">
+                <div class="circle large"></div>
+                <div class="circle small"></div>
+              </div>
+            </div>
+            <div class="contact-right">
+              <form id="contact-form">
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="firstName">First Name</label>
+                    <input
+                      type="text"
+                      id="firstName"
+                      name="firstName"
+                      required
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="lastName">Last Name</label>
+                    <input type="text" id="lastName" name="lastName" required />
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required />
+                  </div>
+                  <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" required />
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-group checkbox-group">
+                    <label>
+                      General Inquiry
+                      <input type="checkbox" name="inquiry" value="general" />
+                    </label>
+                    <label>
+                      Sales
+                      <input type="checkbox" name="inquiry" value="sales" />
+                    </label>
+                    <label>
+                      Support
+                      <input type="checkbox" name="inquiry" value="support" />
+                    </label>
+                    <label>
+                      Other
+                      <input type="checkbox" name="inquiry" value="other" />
+                    </label>
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-group full-width">
+                    <label for="message">Message</label>
+                    <textarea
+                      id="message"
+                      name="message"
+                      placeholder="Send us a message!"
+                      required
+                    ></textarea>
+                  </div>
+                </div>
+                <div class="form-row">
+                  <button type="submit" class="submit-btn">Send Message</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div class="footer-content">
+          <div class="footer-section about">
+            <h3>About GreenScape</h3>
+            <p>
+              GreenScape Lawn Care is your trusted partner for all lawn and
+              landscaping needs in Brevard County. We're committed to creating
+              beautiful, sustainable outdoor spaces.
+            </p>
+          </div>
+          <div class="footer-section links">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="#about">About Us</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#locations">Service Locations</a></li>
+              <li><a href="#contact">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="footer-section contact">
+            <h3>Contact Us</h3>
+            <p><i class="fas fa-phone"></i> +1 234 567 890</p>
+            <p><i class="fas fa-envelope"></i> contact@greenscape.com</p>
+            <p>
+              <i class="fas fa-map-marker-alt"></i> 123 Lawn Street, Green City,
+              FL 12345
+            </p>
+          </div>
+          <div class="footer-section social">
+            <h3>Follow Us</h3>
+            <a href="#" class="social-icon"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-icon"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2024 GreenScape Lawn Care. All rights reserved.</p>
+        </div>
+      </footer>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
