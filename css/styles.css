@@ -447,7 +447,6 @@ header.scrolled .logo img {
   background-color: #00A86B;
   color: #fff;
   padding: 60px 40px;
-  margin-top: 15px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -801,6 +800,10 @@ textarea {
       width: 100%;
       padding: 30px;
       box-sizing: border-box;
+  }
+  
+  .contact-left {
+    margin-top: 15px;
   }
 
   .form-row {
