@@ -39,7 +39,8 @@ header {
 }
 
 .logo img {
-  height: 40px;
+  height: 58px;
+  width: 80px;
   transition: all 0.3s ease;
 }
 
@@ -648,7 +649,7 @@ textarea {
 }
 
 /* Mobile styles */
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   /* Header */
   .menu-icon {
       display: block;
@@ -662,7 +663,7 @@ textarea {
       top: 100%;
       left: 0;
       right: 0;
-      background-color: rgba(255, 255, 255, 0.95);
+      background-color: rgba(51, 51, 51, 0.65);
       backdrop-filter: blur(5px);
       flex-direction: column;
       padding: 20px 0;
@@ -670,8 +671,9 @@ textarea {
   }
 
   nav ul.show {
-      display: flex;
+      display: block;
   }
+  
 
   nav ul li {
       margin: 10px 0;
@@ -796,6 +798,7 @@ textarea {
 
 /* Tablet styles */
 @media (min-width: 769px) and (max-width: 1024px) {
+  
   .container {
       padding: 0 30px;
   }

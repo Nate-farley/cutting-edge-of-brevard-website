@@ -44,6 +44,39 @@ $(document).ready(function () {
     $('.services-scroll').on('mouseleave', function () {
         autoScroll();
     });
+
+    // Mobile menu toggle
+    $('#menuToggle').click(function () {
+        $('#navMenu').toggleClass('show');
+    });
+
+    // Close menu when clicking outside
+    $(document).click(function (event) {
+        var target = $(event.target);
+        if (!target.closest('#navMenu').length && !target.closest('#menuToggle').length) {
+            $('#navMenu').removeClass('show');
+        }
+    });
+
+    // Smooth scrolling for anchor links
+    $('a[href^="#"]').on('click', function (event) {
+        event.preventDefault();
+        var target = $(this.getAttribute('href'));
+        if (target.length) {
+            $('html, body').stop().animate({
+                scrollTop: target.offset().top - 100
+            }, 1000);
+        }
+    });
+
+    // Shrink header on scroll
+    $(window).scroll(function () {
+        if ($(document).scrollTop() > 50) {
+            $('header').addClass('scrolled');
+        } else {
+            $('header').removeClass('scrolled');
+        }
+    });
 });
 
 function initMap() {
