@@ -763,6 +763,7 @@ textarea {
   .contact-left, .contact-right {
       width: 100%;
       padding: 30px;
+      margin-top: 20px;
       box-sizing: border-box;
   }
 
