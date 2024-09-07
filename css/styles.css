@@ -375,6 +375,12 @@ header.scrolled .logo img {
   font-size: 55px;
   font-weight: 600;
   text-align: center;
+  
+}
+
+.locations-title {
+  position:relative;
+  bottom: 60px;
 }
 
 .map-container {
@@ -769,6 +775,11 @@ textarea {
   /* Locations section */
   #locations h2 {
       font-size: 28px;
+  }
+
+  .locations-title {
+    position:relative;
+    bottom: 0px;
   }
 
   .rotating-words {
