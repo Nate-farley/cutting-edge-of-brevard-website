@@ -22,7 +22,6 @@ h1, h2, h3, h4, h5, h6 {
 /* Header styles */
 header {
   background-color: rgba(51, 51, 51, 0.65);
-  backdrop-filter: blur(5px);
   display: flex;
   justify-content: space-between;
   align-items: center;
