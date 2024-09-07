@@ -296,7 +296,7 @@ header.scrolled .logo img {
   display: flex;
   gap: 30px;
   padding: 20px 0;
-  animation: scroll 60s linear infinite;
+  animation: scroll 22s linear infinite;
 }
 
 @keyframes scroll {
