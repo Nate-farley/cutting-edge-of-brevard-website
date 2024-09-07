@@ -355,7 +355,7 @@ header.scrolled .logo img {
 /* Locations section */
 #locations {
   background: linear-gradient(to bottom, #FFFFFF 0%, #FFFFFF 90%, #F4F4F4 100%);
-  padding: 100px 0;
+  padding: 50px 0;
   position: relative;
   overflow: hidden;
 }
@@ -379,7 +379,7 @@ header.scrolled .logo img {
 }
 
 .locations-title {
-  position:relative;
+  position: relative;
   bottom: 60px;
 }
 
@@ -424,7 +424,7 @@ header.scrolled .logo img {
 
 /* Contact section */
 #contact {
-  padding: 100px 0;
+  padding: 50px 0;
   background-color: #f4f4f4;
   display: flex;
   align-items: center;
