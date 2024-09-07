@@ -38,7 +38,14 @@
     <main>
       <section id="hero">
         <div class="hero-left">
-          <video autoplay muted loop id="myVideo">
+          <video
+            autoplay
+            muted
+            loop
+            playsinline
+            preload="metadata"
+            id="myVideo"
+          >
             <source src="./images/video.MOV" type="video/mp4" />
           </video>
           <div class="overlay"></div>
@@ -175,7 +182,7 @@
 
       <section id="locations" class="full-screen-vertical">
         <div class="container">
-          <div style="text-align: center; margin-bottom: 20px">
+          <div style="text-align: center; position: relative; bottom: 60px">
             <h2>Serving Locations in Brevard County</h2>
             <p style="color: rgb(63, 63, 63)">
               From beachside to mainland, we bring expert lawn care and
