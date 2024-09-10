@@ -77,6 +77,67 @@ $(document).ready(function () {
             $('header').removeClass('scrolled');
         }
     });
+
+    // Form submission using Formspree
+    $('#contact-form').submit(function (e) {
+        e.preventDefault();
+
+        // Basic form validation
+        let isValid = true;
+        $('#contact-form input[required], #contact-form textarea[required]').each(function () {
+            if ($(this).val().trim() === '') {
+                isValid = false;
+                $(this).addClass('error');
+            } else {
+                $(this).removeClass('error');
+            }
+        });
+
+        if (!isValid) {
+            alert('Please fill in all required fields.');
+            return;
+        }
+
+        // Collect form data
+        let formData = {
+            firstName: $('#firstName').val(),
+            lastName: $('#lastName').val(),
+            email: $('#email').val(),
+            phone: $('#phone').val(),
+            inquiry: [],
+            message: $('#message').val()
+        };
+
+        // Collect checkbox values
+        $('input[name="inquiry"]:checked').each(function () {
+            formData.inquiry.push($(this).val());
+        });
+
+        // Formspree AJAX submission
+        $.ajax({
+            url: "https://formspree.io/f/xdknjrqo",
+            method: 'POST',
+            data: formData,
+            dataType: 'json',
+            success: function (response) {
+                alert('Thank you for your message. We will get back to you soon!');
+                $('#contact-form')[0].reset();
+            },
+            error: function (xhr, status, error) {
+                alert('An error occurred. Please try again later.');
+                console.error(error);
+            }
+        });
+    });
+
+    // Add error class on blur if field is empty
+    $('#contact-form input[required], #contact-form textarea[required]').blur(function () {
+        if ($(this).val().trim() === '') {
+            $(this).addClass('error');
+        } else {
+            $(this).removeClass('error');
+        }
+    });
 });
 
 function initMap() {
