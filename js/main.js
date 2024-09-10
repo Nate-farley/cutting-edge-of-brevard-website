@@ -115,7 +115,7 @@ $(document).ready(function () {
 
         // Formspree AJAX submission
         $.ajax({
-            url: "https://formspree.io/f/xdknjrqo",
+            url: "https://formspree.io/f/xanwkgrn",
             method: 'POST',
             data: formData,
             dataType: 'json',
