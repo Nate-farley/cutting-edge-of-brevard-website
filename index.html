@@ -85,7 +85,15 @@
               />
             </div>
             <div class="about-text">
-              <h2>Learn More About Us</h2>
+              <h2
+                style="
+                  padding-left: 20px;
+                  padding-right: 20px;
+                  text-align: center;
+                "
+              >
+                Learn More About Us
+              </h2>
               <p class="align-left">
                 Cutting Edge is a well-qualified lawn and landscaping company
                 that has been in business here in Brevard County for 20 plus
@@ -289,6 +297,31 @@
                   </div>
                 </div>
                 <div class="form-row">
+                  <div class="">
+                    <label style="margin-right: 20px; font-weight: bold"
+                      >Residency Type:
+                    </label>
+                    <label style="font-weight: 500">
+                      Residential
+                      <input
+                        style="margin-left: 5px"
+                        type="checkbox"
+                        name="property_type"
+                        value="residential"
+                      />
+                    </label>
+                    <label style="font-weight: 500">
+                      Commercial
+                      <input
+                        style="margin-left: 5px"
+                        type="checkbox"
+                        name="property_type"
+                        value="commercial"
+                      />
+                    </label>
+                  </div>
+                </div>
+                <div class="form-row">
                   <div class="form-group checkbox-group">
                     <label>
                       General Inquiry
@@ -297,15 +330,6 @@
                         type="checkbox"
                         name="inquiry"
                         value="general"
-                      />
-                    </label>
-                    <label>
-                      Sales
-                      <input
-                        style="margin-left: 20px"
-                        type="checkbox"
-                        name="inquiry"
-                        value="sales"
                       />
                     </label>
                     <label>
@@ -350,7 +374,7 @@
 
       <footer class="footer">
         <div class="footer-content">
-          <div class="footer-section about">
+          <div class="footer-section about" style="margin-right: 100px">
             <h3>About Cutting Edge</h3>
             <p>
               Cutting Edge Lawn Care is your trusted partner for all lawn and
