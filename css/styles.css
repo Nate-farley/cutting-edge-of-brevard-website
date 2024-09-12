@@ -192,9 +192,9 @@ header.scrolled .logo img {
 .about-content {
   display: flex;
   align-items: center;
-  gap: 60px;
-  max-width: 1200px;
-  margin: 0 auto;
+  flex-direction: row;
+  justify-content: space-between;
+
   width: 100%;
   box-sizing: border-box;
 }
@@ -217,6 +217,8 @@ header.scrolled .logo img {
 
 .about-text {
   flex: 1;
+  padding-left: 160px;
+  padding-right: 110px;
 }
 
 .about-text h2 {
@@ -296,7 +298,7 @@ header.scrolled .logo img {
   display: flex;
   gap: 30px;
   padding: 20px 0;
-  animation: scroll 22s linear infinite;
+  animation: scroll 17s linear infinite;
 }
 
 @keyframes scroll {
