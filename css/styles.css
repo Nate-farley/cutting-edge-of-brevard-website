@@ -105,7 +105,8 @@ header.scrolled .logo img {
 /* Hero section */
 #hero {
   display: flex;
-  height: 100vh;
+  height: calc(100vh - 60px); /* Subtract header height */
+  min-height: 500px; /* Ensure minimum height for smaller screens */
   margin-top: 60px;
   width: 100%;
   box-sizing: border-box;
@@ -114,7 +115,7 @@ header.scrolled .logo img {
 .hero-left, .hero-right {
   flex: 1;
   position: relative;
-  width: 100%;
+  height: 100%; /* Ensure both sides have the same height */
 }
 
 .hero-left video {
@@ -165,6 +166,7 @@ header.scrolled .logo img {
 .top-images {
   display: flex;
   flex: 1;
+  height: 50%; /* Set to half the height of hero-right */
 }
 
 .top-images img {
@@ -173,15 +175,25 @@ header.scrolled .logo img {
   object-fit: cover;
 }
 
+
 .bottom-image {
   flex: 1;
+  height: 50%; /* Set to half the height of hero-right */
 }
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+
 
 .bottom-image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
+
 
 /* About section */
 #about {
@@ -685,6 +697,8 @@ textarea {
   }
 
   
+
+  
   .menu-icon {
       display: block;
       cursor: pointer;
@@ -740,7 +754,7 @@ textarea {
   }
 
   .hero-left {
-      height: 100vh;
+    height: calc(100vh - 60px); /* Full viewport height minus header on mobile */
   }
 
   .hero-left .overlay {
