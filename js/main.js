@@ -11,39 +11,7 @@ $(document).ready(function () {
 });
 
 $(document).ready(function () {
-    const servicesContainer = $('.services-container');
-    const scrollSpeed = 0.5; // pixels per frame
-    let scrollPosition = 0;
-    let animationId;
 
-    // Clone items to ensure smooth looping
-    const items = servicesContainer.children().clone();
-    servicesContainer.append(items);
-
-    function autoScroll() {
-        scrollPosition += scrollSpeed;
-
-        // Reset position when we've scrolled the width of all original items
-        if (scrollPosition >= servicesContainer.children().length * 270 / 2) {
-            scrollPosition = 0;
-        }
-
-        servicesContainer.css('transform', `translateX(${-scrollPosition}px)`);
-        animationId = requestAnimationFrame(autoScroll);
-    }
-
-    // Start auto-scrolling
-    autoScroll();
-
-    // Pause scrolling when mouse enters the services section
-    $('.services-scroll').on('mouseenter', function () {
-        cancelAnimationFrame(animationId);
-    });
-
-    // Resume scrolling when mouse leaves the services section
-    $('.services-scroll').on('mouseleave', function () {
-        autoScroll();
-    });
 
     // Mobile menu toggle
     $('#menuToggle').click(function () {
@@ -241,4 +209,7 @@ document.addEventListener('DOMContentLoaded', function () {
             navMenu.classList.remove('show');
         });
     });
+
+
+
 });
